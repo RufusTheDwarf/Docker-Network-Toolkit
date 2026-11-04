@@ -8,7 +8,7 @@
 
 - 45min réinstallation de Ubuntu + Lecture de la théorie
 
-- 45min
+- 45min installation des fichiers, paquets, dépendances
 
 //11.11.2026
 
