@@ -8,14 +8,14 @@
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/Projet-ETML-2563EB?style=flat-square" alt="Projet ETML" />
-  <img src="https://img.shields.io/badge/Statut-En%20cours-D97706?style=flat-square" alt="Statut en cours" />
-  <img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Docker%20Compose-Orchestration-1D63ED?style=flat-square&logo=docker&logoColor=white" alt="Docker Compose" />
-  <img src="https://img.shields.io/badge/Linux-Debian-A81D33?style=flat-square&logo=debian&logoColor=white" alt="Debian Linux" />
-  <img src="https://img.shields.io/badge/VirtualBox-Virtualisation-183A61?style=flat-square&logo=virtualbox&logoColor=white" alt="VirtualBox" />
-  <img src="https://img.shields.io/badge/Configuration-YAML-CB171E?style=flat-square&logo=yaml&logoColor=white" alt="YAML" />
-  <img src="https://img.shields.io/badge/Scripts-Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" alt="Bash" />
+  <img src="https://img.shields.io/badge/Projet-ETML-2563EB?style=flat" alt="Projet ETML" />
+  <img src="https://img.shields.io/badge/Statut-En%20cours-D97706?style=flat" alt="Statut en cours" />
+  <img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Docker%20Compose-Orchestration-1D63ED?style=flat&logo=docker&logoColor=white" alt="Docker Compose" />
+  <img src="https://img.shields.io/badge/Linux-Debian-A81D33?style=flat&logo=debian&logoColor=white" alt="Debian Linux" />
+  <img src="https://img.shields.io/badge/VirtualBox-Virtualisation-183A61?style=flat&logo=virtualbox&logoColor=white" alt="VirtualBox" />
+  <img src="https://img.shields.io/badge/Configuration-YAML-CB171E?style=flat&logo=yaml&logoColor=white" alt="YAML" />
+  <img src="https://img.shields.io/badge/Scripts-Bash-4EAA25?style=flat&logo=gnubash&logoColor=white" alt="Bash" />
 </p>
 
 </div>
@@ -212,15 +212,19 @@ Les ressources suivantes servent de références pour la réalisation du projet.
 </p>
 
 <p>
-  Projet pédagogique individuel · ETML · 2026
+  <img src="https://img.shields.io/badge/Projet-ETML-2563EB?style=flat" alt="ETML" />
+  <img src="https://img.shields.io/badge/Statut-En%20cours-D97706?style=flat" alt="En cours" />
+  <img src="https://img.shields.io/badge/Docker-Containers-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Compose-Orchestration-1D63ED?style=flat&logo=docker&logoColor=white" alt="Docker Compose" />
+  <img src="https://img.shields.io/badge/Linux-Debian-A81D33?style=flat&logo=debian&logoColor=white" alt="Debian" />
 </p>
 
 <p>
-  <a href="https://github.com/RufusTheDwarf/Docker-Network-Toolkit">GitHub</a>
+  <a href="https://github.com/RufusTheDwarf/Docker-Network-Toolkit">Repository</a>
   &nbsp;·&nbsp;
   <a href="https://github.com/RufusTheDwarf/Docker-Network-Toolkit/issues">Issues</a>
 </p>
 
-<sub>Développé dans le cadre d'un projet de formation en infrastructure informatique.</sub>
+<sub>Projet pédagogique individuel · ETML · 2026</sub>
 
 </div>
