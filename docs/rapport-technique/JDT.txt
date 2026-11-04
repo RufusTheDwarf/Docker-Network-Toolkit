@@ -2,7 +2,7 @@
 
 - 45min introduction au P_Bulle
 
-- 45min installation de Ubuntu
+- 45min installation de Ubuntu + lecture de la théorie 
 
 - 45min Mise en place des fichiers pour le projet + création depot gihub
 
