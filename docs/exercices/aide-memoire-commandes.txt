@@ -1,0 +1,68 @@
+DOCKER NETWORK TOOLKIT - AIDE-MEMOIRE LINUX ET DOCKER
+====================================================
+
+TERMINAL LINUX
+--------------
+pwd                 Afficher le dossier actuel
+ls -lah             Lister les fichiers, y compris les fichiers caches
+cd DOSSIER          Entrer dans un dossier
+cd ..               Remonter au dossier parent
+cd ~                Revenir au dossier personnel
+mkdir -p DOSSIER    Creer un dossier et ses parents si necessaire
+nano FICHIER        Modifier un fichier texte
+cat FICHIER         Afficher le contenu d'un fichier
+
+IMAGES DOCKER
+-------------
+docker image ls                         Lister les images
+docker image ls -a                      Lister toutes les images visibles
+docker image inspect IMAGE:TAG          Inspecter une image
+docker build -t IMAGE:TAG .             Construire une image avec un tag
+docker build .                          Construire sans attribuer de tag
+docker image tag SOURCE CIBLE           Ajouter un tag a une image existante
+docker image rm IMAGE:TAG               Supprimer une reference ou une image
+docker image ls --filter dangling=true  Lister les images dangling
+docker image prune                      Supprimer les images dangling non utilisees
+
+CONTENEURS
+----------
+docker ps                               Lister les conteneurs actifs
+docker ps -a                            Lister tous les conteneurs
+docker run -dit --name NOM IMAGE:TAG    Creer et lancer en arriere-plan avec stdin et TTY
+docker exec NOM COMMANDE                Executer une commande dans un conteneur actif
+docker exec -it NOM bash                Ouvrir un shell dans un conteneur actif
+docker logs NOM                         Lire les journaux
+docker inspect NOM                      Inspecter un conteneur
+docker stop NOM                         Arreter un conteneur
+docker start NOM                        Redemarrer un conteneur arrete
+docker rm NOM                           Supprimer un conteneur arrete
+docker rm -f NOM                        Forcer l'arret et la suppression
+
+RESEAUX DOCKER
+--------------
+docker network ls                       Lister les reseaux
+docker network create NOM               Creer un reseau bridge personnalise
+docker network inspect NOM              Inspecter un reseau
+docker network connect RESEAU CONTENEUR Connecter un conteneur a un reseau
+docker network disconnect RESEAU CONT.  Deconnecter un conteneur d'un reseau
+docker network rm NOM                   Supprimer un reseau inutilise
+
+PUBLICATION
+-----------
+docker login                            S'authentifier aupres du registre
+docker image tag IMAGE:TAG USER/IMAGE:TAG  Ajouter le nom Docker Hub
+docker image push USER/IMAGE:TAG        Publier l'image
+
+RAPPELS IMPORTANTS
+------------------
+- Le tag latest n'est pas automatiquement la version la plus recente.
+- Sans tag dans une reference d'image, Docker utilise latest.
+- Un docker build sans -t peut produire une image sans tag.
+- Plusieurs tags peuvent pointer vers le meme IMAGE ID.
+- Une image est un modele. Un conteneur est une instance de cette image.
+- docker exec lance une commande dans un conteneur deja actif.
+- docker image prune nettoie les images dangling. L'option -a est plus large.
+- Un conteneur en mode detache s'arrete si son processus principal se termine.
+- N'effectuer les tests reseau que dans un laboratoire autorise.
+
+Documentation officielle : https://docs.docker.com/
