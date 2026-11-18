@@ -1,0 +1,41 @@
+name: docker-network-toolkit
+
+services:
+  toolbox:
+    build:
+      context: ./containers/toolbox
+    image: docker-network-toolkit/toolbox:1.0
+    container_name: dnt-toolbox
+    command: ["sleep", "infinity"]
+    working_dir: /workspace
+    cap_add:
+      - NET_RAW
+    networks:
+      - toolkit
+
+  web:
+    image: nginx:stable-alpine
+    container_name: dnt-web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web:/usr/share/nginx/html:ro
+    restart: unless-stopped
+    networks:
+      - toolkit
+
+  iperf3-server:
+    build:
+      context: ./containers/iperf3
+    image: docker-network-toolkit/iperf3-server:1.0
+    container_name: dnt-iperf3
+    expose:
+      - "5201"
+    restart: unless-stopped
+    networks:
+      - toolkit
+
+networks:
+  toolkit:
+    name: dnt-network
+    driver: bridge

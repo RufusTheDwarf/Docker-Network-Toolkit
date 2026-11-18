@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+
+*.log
+*.pcap
+*.pcapng
+
+backup/
+backups/
+tmp/
+
+.DS_Store
