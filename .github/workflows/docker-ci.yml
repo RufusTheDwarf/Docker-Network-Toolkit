@@ -1,0 +1,45 @@
+
+name: Docker Network Toolkit CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  docker-tests:
+    name: Build and Network Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Validate Docker Compose
+        run: docker compose config -q
+
+      - name: Validate Bash script
+        run: bash -n scripts/test-stack.sh
+
+      - name: Build Docker images
+        run: docker compose build
+
+      - name: Start containers
+        run: docker compose up -d --wait
+
+      - name: Run network tests
+        run: bash scripts/test-stack.sh
+
+      - name: Display logs on failure
+        if: failure()
+        run: docker compose logs --no-color
+
+      - name: Cleanup
+        if: always()
+        run: docker compose down --remove-orphans
