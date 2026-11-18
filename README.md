@@ -113,7 +113,7 @@ Les trois services ont été déployés avec Docker Compose et les principaux te
 | Script de tests Bash | Fonctionnel |
 | Git et signatures SSH | Configurés |
 | Publication GitHub | Fonctionnelle |
-| CI GitHub Actions | À développer |
+| CI GitHub Actions | Opérationnelle. tests automatisés validés |
 | Durcissement de sécurité | À approfondir |
 
 Les résultats présentés correspondent aux essais réalisés dans le laboratoire. Ils ne constituent pas une certification de sécurité ni une validation de production.
