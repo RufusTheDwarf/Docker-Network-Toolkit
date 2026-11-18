@@ -1,4 +1,5 @@
- <div align="center">
+
+<div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=270&color=0:080D1B,18:102B48,42:075985,68:2563EB,100:0F766E&text=DOCKER%20NETWORK%20TOOLKIT&fontSize=39&fontColor=FFFFFF&fontAlignY=34&desc=CONTAINERIZATION%20%2F%20NETWORKING%20%2F%20INFRASTRUCTURE&descSize=14&descAlignY=57" width="100%" alt="Docker Network Toolkit, infrastructure and networking banner"/>
 
@@ -11,17 +12,15 @@
 <br>
 
 [![Project](https://img.shields.io/badge/PROJECT-ETML-2563EB?style=flat)](https://www.etml.ch/)
-[![Status](https://img.shields.io/badge/STATUS-IN_DEVELOPMENT-D97706?style=flat)](https://github.com/RufusTheDwarf/Docker-Network-Toolkit)
-[![Platform](https://img.shields.io/badge/PLATFORM-Linux-444444?style=flat&logo=linux&logoColor=white)](https://www.linux.org/)
-[![VirtualBox](https://img.shields.io/badge/VM-Oracle_VirtualBox-183A61?style=flat&logo=virtualbox&logoColor=white)](https://www.virtualbox.org/)
+[![Status](https://img.shields.io/badge/STATUS-CORE_OPERATIONAL-16A34A?style=flat)](https://github.com/RufusTheDwarf/Docker-Network-Toolkit)
+[![Platform](https://img.shields.io/badge/PLATFORM-Linux-444444?style=flat&logo=linux&logoColor=white)](https://www.kernel.org/)
+[![VMware](https://img.shields.io/badge/VM-VMware-607078?style=flat)](https://www.vmware.com/)
 [![Docker](https://img.shields.io/badge/CONTAINERS-Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Compose](https://img.shields.io/badge/ORCHESTRATION-Docker_Compose-1D63ED?style=flat&logo=docker&logoColor=white)](https://docs.docker.com/compose/)
 [![Networking](https://img.shields.io/badge/FOCUS-Networking-0891B2?style=flat)](https://docs.docker.com/engine/network/)
-[![Linux](https://img.shields.io/badge/SYSTEM-Linux-558B2F?style=flat&logo=linux&logoColor=white)](https://www.kernel.org/)
 [![Bash](https://img.shields.io/badge/SCRIPTS-Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![YAML](https://img.shields.io/badge/CONFIG-YAML-CB171E?style=flat&logo=yaml&logoColor=white)](https://yaml.org/)
 [![Git](https://img.shields.io/badge/VERSION_CONTROL-Git-F05032?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
-[![Infrastructure](https://img.shields.io/badge/DOMAIN-INFRASTRUCTURE-0F766E?style=flat)](https://www.docker.com/)
 [![Education](https://img.shields.io/badge/TYPE-EDUCATIONAL_PROJECT-7C3AED?style=flat)](https://github.com/RufusTheDwarf/Docker-Network-Toolkit)
 [![License](https://img.shields.io/github/license/RufusTheDwarf/Docker-Network-Toolkit?style=flat&color=2E9D68)](LICENSE)
 
@@ -37,23 +36,25 @@
 
 **A containerized network and system toolkit for infrastructure students and enthusiasts.**
 
-[**Repository**](https://github.com/RufusTheDwarf/Docker-Network-Toolkit) · [**Docker Documentation**](https://docs.docker.com/) · [**Report an issue**](https://github.com/RufusTheDwarf/Docker-Network-Toolkit/issues)
+[**Repository**](https://github.com/RufusTheDwarf/Docker-Network-Toolkit) ·
+[**Docker Documentation**](https://docs.docker.com/) ·
+[**Report an issue**](https://github.com/RufusTheDwarf/Docker-Network-Toolkit/issues)
 
 </div>
 
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=5&color=0:00D4FF,45:2563EB,100:7C3AED" width="100%" alt="Cyan blue and violet gradient divider"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&height=5&color=0:00D4FF,45:2563EB,100:7C3AED" width="100%" alt="Gradient divider"/>
 </p>
 
 <div align="center">
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/BalticServers_data_center.jpg" width="100%" alt="Blue illuminated server racks inside a data center"/>
 
-<sub>Illustrative server-room photograph. This is not a photograph of the project's actual virtual infrastructure.</sub>
+<sub>Photographie d'illustration. Elle ne représente pas l'infrastructure virtuelle réelle du projet.</sub>
 
 <br>
 
-<img src="https://skillicons.dev/icons?i=docker,linux,bash,git,github&theme=dark" alt="Docker, Linux, Bash, Git and GitHub technology icons"/>
+<img src="https://skillicons.dev/icons?i=docker,linux,bash,git,github&theme=dark" alt="Docker, Linux, Bash, Git and GitHub technologies"/>
 
 </div>
 
@@ -61,371 +62,308 @@
 
 **Docker Network Toolkit** est un projet pédagogique réalisé dans le cadre de la formation informatique à l'ETML.
 
-L'objectif est de développer une boîte à outils conteneurisée destinée aux personnes qui travaillent dans l'infrastructure informatique.
+L'objectif est de concevoir, déployer et administrer un laboratoire réseau conteneurisé permettant d'expérimenter les technologies Docker, Linux, la virtualisation et les outils de diagnostic réseau.
 
-Le projet vise à regrouper plusieurs outils de diagnostic réseau et système dans un environnement Docker, hébergé au sein d'une machine virtuelle Linux exécutée avec Oracle VirtualBox.
+L'infrastructure est hébergée dans une machine virtuelle Ubuntu exécutée avec VMware sur un poste Windows.
 
-L'idée est de construire un véritable petit laboratoire d'infrastructure permettant de comprendre comment les machines virtuelles, les conteneurs, les réseaux virtuels et les services communiquent entre eux.
+Elle repose sur **Docker Engine**, **Docker Compose** et un réseau virtuel de type `bridge`.
 
-### Ce que le projet cherche à apporter
+Le projet permet de comprendre concrètement la communication entre un système hôte, une machine virtuelle et plusieurs conteneurs.
 
-- Regrouper des outils réseau et système dans un environnement organisé.
+### Objectifs principaux
+
 - Construire des images Docker personnalisées.
-- Déployer et gérer plusieurs conteneurs.
-- Comprendre les réseaux virtuels Docker.
-- Étudier la communication entre conteneurs et avec la machine hôte.
-- Apprendre à administrer un environnement Linux.
-- Documenter et diagnostiquer une infrastructure technique.
+- Déployer plusieurs services avec Docker Compose.
+- Comprendre les réseaux Docker et leur isolation.
+- Diagnostiquer les communications réseau.
+- Observer les interfaces, adresses IP, routes et ports.
+- Mesurer les performances avec iperf3.
+- Effectuer des diagnostics HTTP avec curl.
+- Examiner les ports avec Nmap.
+- Automatiser les vérifications avec Bash.
+- Appliquer les bonnes pratiques de sécurité.
+- Versionner et documenter les configurations avec Git et GitHub.
 
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:0F766E,50:06B6D4,100:2563EB" width="100%" alt="Teal cyan and blue divider"/>
-</p>
+---
 
 ## État actuel du projet
 
-<badge color="warning">Squelette initial en développement</badge>
+![Operational](https://img.shields.io/badge/INFRASTRUCTURE-OPERATIONAL-16A34A?style=flat)
+![Tests](https://img.shields.io/badge/NETWORK_TESTS-5%2F5_PASS-059669?style=flat)
+![Development](https://img.shields.io/badge/PROJECT-IN_DEVELOPMENT-D97706?style=flat)
 
-Le dépôt est actuellement une base de travail. Les objectifs d'architecture sont définis, mais l'infrastructure Docker complète n'est pas encore implémentée.
+Le cœur de l'infrastructure Docker Network Toolkit est opérationnel.
 
-Voici ce qui existe réellement sur la branche `main` :
+Les trois services ont été déployés avec Docker Compose et les principaux tests réseau ont réussi le **18 novembre 2026**.
 
-| Élément | État observé |
+| Composant | État |
 |---|---|
-| README.md | Documentation du projet |
-| LICENSE | Licence MIT |
-| `containers/toolbox/Dockerfile` | Présent, actuellement vide |
-| `scripts/script.txt` | Présent, actuellement vide |
-| `docs/rapport-technique/JDT.txt` | Journal de travail |
-| `compose.yaml` | Absent |
-| `.gitignore` | Absent |
-| Images Docker personnalisées | Pas encore implémentées |
-| Services Docker Compose | Pas encore définis |
-| Scripts d'installation et de lancement | Pas encore implémentés |
-| Tests automatisés | Aucun présent |
+| Machine virtuelle Ubuntu sur VMware | Opérationnelle |
+| Docker Engine | Installé et fonctionnel |
+| Docker Compose | Fonctionnel |
+| Image Toolbox personnalisée | Construite et testée |
+| Image iperf3 personnalisée | Construite et utilisée |
+| Serveur web Nginx | Opérationnel |
+| Réseau Docker `dnt-network` | Opérationnel |
+| Résolution DNS inter-conteneurs | Validée |
+| Connectivité ICMP | Validée |
+| Service HTTP | Validé |
+| Scan TCP avec Nmap | Validé |
+| Mesure réseau avec iperf3 | Validée |
+| Script de tests Bash | Fonctionnel |
+| Git et signatures SSH | Configurés |
+| Publication GitHub | Fonctionnelle |
+| CI GitHub Actions | À développer |
+| Durcissement de sécurité | À approfondir |
 
-**Important :** le projet ne peut pas encore être déployé avec `docker compose up`, car aucun fichier Compose n'est présent et le Dockerfile est vide.
-
-Les architectures et procédures présentées ci-dessous décrivent les objectifs techniques et les connaissances visées. Elles ne doivent pas être interprétées comme des composants déjà opérationnels.
+Les résultats présentés correspondent aux essais réalisés dans le laboratoire. Ils ne constituent pas une certification de sécurité ni une validation de production.
 
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:2563EB,50:7C3AED,100:EC4899" width="100%" alt="Blue violet and magenta divider"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:0F766E,50:06B6D4,100:2563EB" width="100%" alt="Divider"/>
 </p>
 
-## Ce que ce projet va nous apprendre
-
-Ce projet est particulièrement intéressant pour comprendre ce qui se passe derrière les systèmes informatiques et les infrastructures d'entreprise.
-
-Il permet de travailler sur plusieurs notions fondamentales de l'administration système et réseau.
+## Ce que ce projet permet d'apprendre
 
 <div align="center">
 
-[![Virtualization](https://img.shields.io/badge/01-Virtualisation-2563EB?style=flat)](#1-virtualisation-avec-virtualbox)
+[![VMware](https://img.shields.io/badge/01-Virtualisation-2563EB?style=flat)](#1-virtualisation-avec-vmware)
 [![Linux](https://img.shields.io/badge/02-Linux-558B2F?style=flat)](#2-administration-linux)
 [![Docker](https://img.shields.io/badge/03-Docker-2496ED?style=flat)](#3-conteneurs-et-images-docker)
-[![Networking](https://img.shields.io/badge/04-Réseaux-0891B2?style=flat)](#4-réseaux-docker)
-[![Compose](https://img.shields.io/badge/05-Orchestration-7C3AED?style=flat)](#5-docker-compose)
+[![Network](https://img.shields.io/badge/04-Réseaux-0891B2?style=flat)](#4-réseaux-docker)
+[![Compose](https://img.shields.io/badge/05-Compose-7C3AED?style=flat)](#5-docker-compose)
 [![Security](https://img.shields.io/badge/06-Sécurité-0F766E?style=flat)](#6-sécurité-et-isolation)
 
 </div>
 
-### 1. Virtualisation avec VirtualBox
+### 1. Virtualisation avec VMware
 
-<img src="https://api.iconify.design/mdi/monitor-multiple.svg?color=%2360A5FA" width="46" alt="Virtual machines icon" align="right"/>
+<img src="https://api.iconify.design/mdi/monitor-multiple.svg?color=%2360A5FA" width="46" alt="Virtualization" align="right"/>
 
-Avant de construire des conteneurs, il faut comprendre l'environnement dans lequel ils vont fonctionner.
+Le laboratoire utilise une machine virtuelle Linux pour héberger les services Docker.
 
-VirtualBox permet de créer une machine virtuelle Linux sur un poste Windows.
+La virtualisation permet d'expérimenter sans devoir déployer directement les services sur le système Windows.
 
-Tu découvriras :
+Notions étudiées :
 
-- Le rôle d'un hyperviseur.
-- La différence entre une machine physique et une machine virtuelle.
-- Les ressources CPU, RAM et stockage.
-- Les cartes réseau virtuelles.
-- La communication entre le système hôte et le système invité.
-- Les modes réseau NAT, Bridged et Host-only.
+- Hyperviseur et machines virtuelles.
+- Ressources CPU, RAM et stockage.
+- Interfaces réseau virtuelles.
+- Communication entre hôte et invité.
+- NAT et réseau bridge.
+- Adresses IP et passerelles.
+- VMware VMnet8.
 
 ### 2. Administration Linux
 
-<img src="https://api.iconify.design/logos:linux-tux.svg" width="46" alt="Linux penguin logo" align="right"/>
+<img src="https://api.iconify.design/logos:linux-tux.svg" width="46" alt="Linux" align="right"/>
 
-La machine virtuelle Linux sert d'hôte à Docker.
+Ubuntu constitue le système d'exploitation invité.
 
-Ce projet permet donc de travailler sur l'administration d'un environnement Linux.
+Le projet permet de travailler sur :
 
-Les notions à apprendre comprennent :
-
-- L'organisation du système de fichiers.
-- La gestion des utilisateurs et des groupes.
-- Les permissions et les propriétaires.
+- Les commandes du terminal.
+- Les fichiers et les répertoires.
+- Les permissions Linux.
 - L'installation des paquets.
-- La gestion des dépendances.
 - Les services système.
-- Les interfaces réseau.
-- Les adresses IP, routes et passerelles.
-- Les journaux système.
-- Les commandes de diagnostic.
+- La configuration réseau.
+- Les processus.
+- Les journaux et les diagnostics.
 
 ### 3. Conteneurs et images Docker
 
-<img src="https://cdn.simpleicons.org/docker/2496ED" width="48" alt="Docker icon" align="right"/>
+<img src="https://cdn.simpleicons.org/docker/2496ED" width="48" alt="Docker" align="right"/>
 
-Docker permet d'exécuter une application ou un ensemble d'outils dans un environnement isolé.
-
-Tu découvriras la différence entre :
+Docker permet d'exécuter des services dans des environnements isolés et reproductibles.
 
 | Image Docker | Conteneur Docker |
 |---|---|
-| Modèle utilisé pour créer un environnement | Instance en cours d'exécution d'une image |
-| Contient les dépendances et fichiers nécessaires | Exécute les processus |
-| Peut être versionnée et réutilisée | Peut être arrêté, supprimé ou recréé |
-| Construite à partir d'un Dockerfile | Créé à partir d'une image |
+| Modèle de fichiers et configuration | Instance créée à partir d'une image |
+| Construite avec un Dockerfile | Créée avec `docker run` ou Compose |
+| Réutilisable et versionnable | Possède son propre état d'exécution |
+| Peut posséder plusieurs tags | Peut être démarré, arrêté ou supprimé |
 
-Les concepts étudiés :
-
-- Docker Engine.
-- Images et couches.
-- Dockerfile.
-- Build et cache de construction.
-- Registres d'images.
-- Variables d'environnement.
-- Volumes.
-- Cycle de vie des conteneurs.
-- Isolation des processus.
+Les exercices du dépôt abordent la construction d'images, les tags, l'inspection et le cycle de vie des conteneurs.
 
 ### 4. Réseaux Docker
 
-<img src="https://api.iconify.design/mdi/lan-connect.svg?color=%2306B6D4" width="48" alt="Network connections icon" align="right"/>
+<img src="https://api.iconify.design/mdi/lan-connect.svg?color=%2306B6D4" width="48" alt="Networking" align="right"/>
 
-La partie centrale du projet est la communication réseau entre les différents conteneurs.
+Les conteneurs communiquent au travers d'un réseau Docker personnalisé.
 
-Tu apprendras notamment :
+Notions étudiées :
 
-- Le fonctionnement des réseaux virtuels.
-- Les réseaux bridge.
-- Les sous-réseaux.
-- Les adresses IP.
-- Les passerelles.
-- La résolution DNS entre services.
-- La publication de ports.
-- La séparation des réseaux.
-- Les communications entre conteneurs.
-- Le diagnostic des problèmes de connectivité.
-
-Un point fondamental : les conteneurs appartenant au même réseau Docker peuvent communiquer directement. Avec Docker Compose, les services peuvent se retrouver par leur nom DNS sur le réseau partagé.
-
-Cela évite de devoir dépendre d'adresses IP fixes, qui peuvent changer lors de la recréation des conteneurs.
+- Réseaux `bridge`.
+- Sous-réseaux et passerelles.
+- Résolution DNS intégrée.
+- Communication par nom de service.
+- Ports internes et publiés.
+- Inspection des interfaces.
+- Isolation entre réseaux.
 
 ### 5. Docker Compose
 
-<img src="https://api.iconify.design/mdi/layers-triple.svg?color=%237C3AED" width="48" alt="Layered orchestration icon" align="right"/>
+<img src="https://api.iconify.design/mdi/layers-triple.svg?color=%237C3AED" width="48" alt="Compose" align="right"/>
 
-Docker Compose permet de définir plusieurs services dans un seul fichier YAML.
+Docker Compose permet de définir plusieurs services dans un fichier YAML unique.
 
-Au lieu de gérer chaque conteneur séparément, l'ensemble de l'environnement peut être décrit dans une configuration.
+Le projet utilise `compose.yaml` pour gérer :
 
-Les notions à apprendre :
-
-- Déclaration des services.
-- Construction des images.
-- Variables d'environnement.
-- Dépendances entre services.
-- Réseaux personnalisés.
-- Volumes persistants.
-- Publication des ports.
-- Démarrage et arrêt coordonnés.
+- La construction des images.
+- Les services Toolbox, Nginx et iperf3.
+- Les noms des conteneurs.
+- Le réseau Docker personnalisé.
+- Le port HTTP publié.
+- Les volumes de configuration.
+- Les options de redémarrage.
 
 ### 6. Sécurité et isolation
 
-<img src="https://api.iconify.design/mdi/shield-lock.svg?color=%2310B981" width="48" alt="Security shield icon" align="right"/>
+<img src="https://api.iconify.design/mdi/shield-lock.svg?color=%2310B981" width="48" alt="Security" align="right"/>
 
-Un environnement conteneurisé doit être conçu avec des règles de sécurité.
+La sécurité fait partie intégrante du laboratoire.
 
-Le projet doit notamment permettre de comprendre :
+Les principaux sujets sont :
 
-- L'isolation des services.
-- Les permissions Linux.
-- L'exécution avec un utilisateur non privilégié.
-- La gestion des secrets.
-- Les ports exposés.
+- Les utilisateurs non privilégiés.
 - Les capacités Linux.
-- Les réseaux internes.
-- Les privilèges accordés aux conteneurs.
+- Les permissions Docker.
+- La protection des secrets.
+- L'exposition des ports.
+- L'isolation des services.
+- La gestion des images et de leurs versions.
 
-L'objectif est d'éviter d'accorder des permissions excessives simplement pour faire fonctionner un outil.
+---
 
-### Compétences développées
+## Architecture du laboratoire
 
-| Domaine | Compétences |
-|---|---|
-| Systèmes | Linux, paquets, utilisateurs, services |
-| Virtualisation | VirtualBox, cartes réseau virtuelles |
-| Conteneurisation | Docker, images, conteneurs |
-| Réseau | IP, DNS, bridge, ports, routage |
-| Orchestration | Docker Compose et YAML |
-| Automatisation | Bash et scripts système |
-| Sécurité | Isolation et permissions |
-| Dépannage | Logs, inspection et diagnostic |
-| Documentation | Architecture et procédures techniques |
+L'infrastructure est organisée en trois niveaux :
 
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=5&color=0:06B6D4,50:0F766E,100:2563EB" width="100%" alt="Cyan teal blue divider"/>
-</p>
-
-## Architecture cible
-
-L'infrastructure visée repose sur trois niveaux :
-
-1. Le poste de travail Windows.
-2. Une machine virtuelle Linux hébergée dans VirtualBox.
-3. Docker Engine et les conteneurs exécutés dans cette machine virtuelle.
+1. **Windows** : poste de travail hôte.
+2. **VMware et Ubuntu** : virtualisation et système invité.
+3. **Docker Engine et Compose** : exécution des conteneurs et gestion des réseaux.
 
 <div align="center">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Racks_Amravati_Data_Center.jpg/1280px-Racks_Amravati_Data_Center.jpg" width="100%" alt="Data storage racks at Pi Data Centers, illustrative infrastructure photograph"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Racks_Amravati_Data_Center.jpg/1280px-Racks_Amravati_Data_Center.jpg" width="100%" alt="Illustrative server infrastructure"/>
 
-<sub>Exemple visuel d'infrastructure physique. Le projet utilise une architecture de laboratoire virtualisée.</sub>
+<sub>Illustration d'une infrastructure de serveurs. Le laboratoire réel fonctionne dans une machine virtuelle.</sub>
 
 </div>
 
 ### Schéma général
 
-<badge color="info">Architecture prévue</badge>
-
 ```mermaid
 flowchart TB
-    PC["Poste de travail Windows"]
-    VB["Oracle VirtualBox"]
+    PC["Windows Host"]
+    VMWARE["VMware"]
+    UBUNTU["Ubuntu Linux VM"]
+    ENGINE["Docker Engine / Compose"]
 
-    subgraph VM["Machine virtuelle Linux"]
-        ENGINE["Docker Engine"]
-
-        subgraph DOCKER["Environnement Docker"]
-            NET["Réseau Docker personnalisé"]
-            TOOL["Conteneur Toolbox prévu"]
-            SERVICES["Autres services à définir"]
-        end
-
-        ENGINE --> NET
-        NET --> TOOL
-        NET --> SERVICES
+    subgraph NETWORK["dnt-network - Docker Bridge"]
+        TOOL["dnt-toolbox<br/>Network Diagnostic Client"]
+        WEB["dnt-web<br/>Nginx TCP 80"]
+        IPERF["dnt-iperf3<br/>iperf3 TCP 5201"]
     end
 
-    PC --> VB
-    VB --> ENGINE
+    PC --> VMWARE
+    VMWARE --> UBUNTU
+    UBUNTU --> ENGINE
+    ENGINE --> NETWORK
+
+    TOOL <--> WEB
+    TOOL <--> IPERF
+
+    WEB -. "Host port 8080" .-> UBUNTU
 
     style PC fill:#1E3A8A,color:#fff,stroke:#60A5FA
-    style VB fill:#164E63,color:#fff,stroke:#22D3EE
-    style VM fill:#172554,color:#fff,stroke:#3B82F6
+    style VMWARE fill:#164E63,color:#fff,stroke:#22D3EE
+    style UBUNTU fill:#172554,color:#fff,stroke:#3B82F6
     style ENGINE fill:#075985,color:#fff,stroke:#38BDF8
-    style NET fill:#134E4A,color:#fff,stroke:#2DD4BF
     style TOOL fill:#4C1D95,color:#fff,stroke:#A78BFA
-    style SERVICES fill:#3730A3,color:#fff,stroke:#818CF8
+    style WEB fill:#134E4A,color:#fff,stroke:#2DD4BF
+    style IPERF fill:#3730A3,color:#fff,stroke:#818CF8
 ```
 
-Ce schéma représente l'organisation visée. Les services supplémentaires, les adresses et la configuration réseau restent à définir.
+### Services Docker
 
-### Les différents niveaux réseau
+| Service Compose | Conteneur | Fonction |
+|---|---|---|
+| `toolbox` | `dnt-toolbox` | Client de diagnostic réseau |
+| `web` | `dnt-web` | Serveur web Nginx |
+| `iperf3-server` | `dnt-iperf3` | Serveur de mesure réseau |
 
-| Niveau | Responsabilité |
-|---|---|
-| Windows | Poste de travail et système hôte |
-| VirtualBox | Virtualisation et connectivité de la VM |
-| Linux | Système d'exploitation invité |
-| Docker Engine | Gestion des conteneurs et des réseaux |
-| Réseau Docker | Communication entre services |
-| Conteneurs | Exécution des outils |
+### Réseau Docker
 
-### Comprendre les modes réseau de VirtualBox
+![Bridge](https://img.shields.io/badge/DRIVER-bridge-0891B2?style=flat)
+![DNS](https://img.shields.io/badge/DNS-ENABLED-16A34A?style=flat)
+![Isolation](https://img.shields.io/badge/NETWORK-CUSTOM-7C3AED?style=flat)
 
-Le mode réseau choisi détermine comment la machine virtuelle communique avec le poste de travail et le réseau physique.
+Le projet utilise un réseau Docker personnalisé nommé :
 
-| Mode | Fonctionnement |
-|---|---|
-| NAT | La VM peut accéder au réseau externe. Les connexions entrantes nécessitent notamment une redirection de ports. |
-| Bridged | La VM est connectée au réseau physique comme une machine distincte. |
-| Host-only | La VM communique avec le poste hôte sans être directement exposée au réseau physique. |
-| NAT Network | Plusieurs VM peuvent partager un réseau NAT. |
+`dnt-network`
 
-Le mode final devra être choisi selon les besoins de communication et les règles de sécurité du laboratoire.
+Les services communiquent directement au moyen de leurs noms DNS.
 
-Documentation : [VirtualBox Networking](https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/networkingdetails.html).
+Depuis la Toolbox :
 
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:7C3AED,50:2563EB,100:06B6D4" width="100%" alt="Violet blue cyan divider"/>
-</p>
-
-## Réseaux Docker
-
-La communication entre conteneurs constitue l'une des parties principales du projet.
-
-### Réseau Bridge
-
-Le driver `bridge` permet de connecter plusieurs conteneurs sur un même réseau virtuel.
-
-Les conteneurs peuvent communiquer entre eux sans devoir exposer chaque port sur le réseau physique.
-
-Les points à étudier :
-
-- Création et suppression d'un réseau.
-- Attribution d'adresses IP.
-- Passerelle du réseau.
-- DNS et résolution des noms.
-- Isolation entre réseaux.
-- Publication de ports.
-
-### Communication entre services
-
-Docker Compose crée généralement un réseau par défaut pour un projet.
-
-Les services connectés à ce réseau peuvent se retrouver par leur nom de service.
-
-Exemple conceptuel :
-
-```text
-                    Docker Network
-                    Bridge
-                       |
-          +------------+------------+
-          |            |            |
-     Container A  Container B  Container C
-          |            |            |
-       Service A   Service B   Service C
+```bash
+getent hosts web
+getent hosts iperf3-server
+ping -c 3 web
+curl -fsS http://web/
 ```
 
-Dans cette configuration, un service peut contacter un autre service en utilisant son nom et le port interne concerné.
+Le réseau Docker attribue automatiquement les adresses aux conteneurs.
+
+### Adresses observées pendant les tests
+
+| Service | Adresse IP observée |
+|---|---|
+| Toolbox | `172.18.0.4` |
+| Nginx | `172.18.0.3` |
+| iperf3 | `172.18.0.2` |
+
+Ces adresses ont été relevées le 18 novembre 2026. Elles peuvent changer lors de la recréation des conteneurs ou du réseau.
+
+Les communications doivent donc privilégier les noms DNS plutôt que des adresses IP codées en dur.
 
 ### Ports internes et externes
 
-Il faut distinguer deux notions :
+| Service | Port interne | Port publié sur la VM |
+|---|---|---|
+| Nginx | TCP 80 | TCP 8080 |
+| iperf3 | TCP 5201 | Aucun |
+| Toolbox | Aucun serveur | Aucun |
 
-| Port | Rôle |
+Le port TCP 5201 reste accessible entre les conteneurs raccordés au réseau du projet, mais n'est pas publié directement sur la VM.
+
+Le port TCP 8080 permet d'accéder à Nginx depuis le système hôte si la configuration réseau et les règles de pare-feu l'autorisent.
+
+### Communication VMware
+
+Le laboratoire utilise le réseau virtuel VMware `VMnet8`, associé à une configuration NAT lors des essais documentés.
+
+Un test depuis Windows PowerShell a confirmé l'accès au serveur Nginx :
+
+| Paramètre | Valeur |
 |---|---|
-| Port du conteneur | Port utilisé par le service dans le conteneur |
-| Port de l'hôte | Port publié pour rendre le service accessible depuis l'extérieur |
+| Interface Windows | VMware Network Adapter VMnet8 |
+| Adresse Windows | `192.168.196.1` |
+| Adresse VM Ubuntu | `192.168.196.131` |
+| Port distant | TCP 8080 |
+| Résultat | `TcpTestSucceeded: True` |
 
-Par exemple, une publication telle que `8080:80` fait correspondre le port `8080` de l'hôte au port `80` du conteneur.
+Adresse utilisée pendant cet essai :
 
-Attention : l'accès depuis Windows dépend également du mode réseau choisi dans VirtualBox et de la configuration de la VM.
+`http://192.168.196.131:8080`
 
-### Pourquoi utiliser des réseaux personnalisés ?
+Cette adresse dépend de la configuration locale VMware et n'est pas une adresse publique permanente.
 
-Les réseaux personnalisés permettent de séparer des groupes de services.
-
-Un service qui doit seulement communiquer avec une base de données ne doit pas nécessairement partager le même réseau que tous les autres conteneurs.
-
-Cette organisation facilite :
-
-- L'isolation.
-- La réduction des communications inutiles.
-- La lisibilité de l'architecture.
-- Le diagnostic des problèmes.
-- La limitation des accès.
-
-Références : [Docker Networking](https://docs.docker.com/engine/network/) et [Compose Networking](https://docs.docker.com/compose/how-tos/networking/).
+Documentation complémentaire : [Architecture réseau](docs/architecture/network.md).
 
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:0891B2,50:0F766E,100:84CC16" width="100%" alt="Blue teal green divider"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:2563EB,50:7C3AED,100:EC4899" width="100%" alt="Divider"/>
 </p>
 
 ## Environnement technique
@@ -434,54 +372,50 @@ Références : [Docker Networking](https://docs.docker.com/engine/network/) et [
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=docker,linux,bash,git,github&theme=dark" alt="Docker, Linux, Bash, Git and GitHub icons"/>
+<img src="https://skillicons.dev/icons?i=docker,linux,bash,git,github&theme=dark" alt="Technology icons"/>
 
 <br>
 
-[![Docker Engine](https://img.shields.io/badge/Docker_Engine-Container_Runtime-2496ED?style=flat&logo=docker&logoColor=white)](https://docs.docker.com/engine/)
-[![Compose](https://img.shields.io/badge/Docker_Compose-Service_Orchestration-1D63ED?style=flat&logo=docker&logoColor=white)](https://docs.docker.com/compose/)
-[![Linux](https://img.shields.io/badge/Linux-Guest_OS-FCC624?style=flat&logo=linux&logoColor=black)](https://www.kernel.org/)
-[![Bash](https://img.shields.io/badge/Bash-Automation-4EAA25?style=flat&logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
-[![YAML](https://img.shields.io/badge/YAML-Configuration-CB171E?style=flat&logo=yaml&logoColor=white)](https://yaml.org/)
-[![VirtualBox](https://img.shields.io/badge/VirtualBox-Virtualization-183A61?style=flat&logo=virtualbox&logoColor=white)](https://www.virtualbox.org/)
+[![Docker](https://img.shields.io/badge/Docker-Engine-2496ED?style=flat&logo=docker&logoColor=white)](https://docs.docker.com/engine/)
+[![Compose](https://img.shields.io/badge/Docker-Compose-1D63ED?style=flat&logo=docker&logoColor=white)](https://docs.docker.com/compose/)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-Linux-E95420?style=flat&logo=ubuntu&logoColor=white)](https://ubuntu.com/)
+[![VMware](https://img.shields.io/badge/VMware-Virtualization-607078?style=flat)](https://www.vmware.com/)
+[![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
 
 </div>
 
-### Environnement prévu
-
-| Élément | Choix |
+| Élément | Technologie |
 |---|---|
 | Poste hôte | Windows |
-| Hyperviseur | Oracle VirtualBox |
-| Système invité | Distribution Linux à confirmer |
+| Hyperviseur | VMware |
+| Système invité | Ubuntu Linux |
 | Conteneurisation | Docker Engine |
 | Orchestration | Docker Compose |
-| Images personnalisées | Dockerfile |
+| Image Toolbox | Ubuntu 24.04 |
+| Image iperf3 | Debian Trixie Slim |
+| Serveur web | Nginx Alpine |
+| Scripts | Bash |
 | Configuration | YAML |
-| Automatisation | Bash |
 | Gestion de versions | Git / GitHub |
+| Signature des commits | SSH Ed25519 |
 
-La distribution Linux définitive et les versions exactes des composants ne sont pas encore fixées dans le dépôt.
+Docker Engine 29.9.3 a été observé dans les logs du laboratoire du 11 novembre 2026.
 
-Les versions devront être précisées avant de pouvoir produire une procédure d'installation reproductible.
+Les autres versions doivent être relevées et documentées pour améliorer la reproductibilité.
 
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:2563EB,50:0891B2,100:0F766E" width="100%" alt="Blue cyan teal divider"/>
-</p>
+---
 
-## Installation et préparation
-
-Le dépôt n'est pas encore prêt à déployer une stack Docker. Cette section décrit la préparation de l'environnement et les premières vérifications utiles.
+## Installation et déploiement
 
 ### Prérequis
 
-- Un ordinateur capable d'exécuter une machine virtuelle.
-- Oracle VirtualBox.
-- Une machine virtuelle Linux.
-- Docker Engine installé dans la machine virtuelle.
-- Docker Compose disponible.
+- Une machine Linux avec Docker Engine installé.
+- Docker Compose disponible via `docker compose`.
 - Git.
-- Un accès Internet pour l'installation des dépendances.
+- Une connexion réseau permettant de télécharger les images et paquets nécessaires.
+- Des ressources suffisantes pour les trois services.
+
+Le projet a été testé dans une machine virtuelle Ubuntu sur VMware.
 
 ### 1. Récupérer le dépôt
 
@@ -493,306 +427,566 @@ cd Docker-Network-Toolkit
 
 ### 2. Vérifier Docker
 
-Dans le terminal Linux de la machine virtuelle :
-
 ```bash
 docker --version
-```
-
-Vérifier Docker Compose :
-
-```bash
 docker compose version
-```
-
-Vérifier le fonctionnement du moteur Docker :
-
-```bash
 docker info
 ```
 
-Ces commandes vérifient l'environnement Docker. Elles ne déploient pas encore le projet.
-
-### 3. Explorer les réseaux Docker
-
-Lister les réseaux disponibles :
-
-```bash
-docker network ls
-```
-
-Inspecter le réseau bridge par défaut :
-
-```bash
-docker network inspect bridge
-```
-
-Afficher les informations réseau de Linux :
-
-```bash
-ip -br addr
-```
-
-Afficher la table de routage :
-
-```bash
-ip route
-```
-
-Vérifier les ports en écoute :
-
-```bash
-ss -lntup
-```
-
-Ces commandes permettent de commencer à comprendre les interfaces, les routes, les réseaux Docker et les services actifs.
-
-### 4. Déploiement futur avec Compose
-
-Une fois le fichier `compose.yaml` créé et les images configurées, le processus de déploiement visé sera :
+### 3. Vérifier la configuration Compose
 
 ```bash
 docker compose config
+```
+
+Pour vérifier uniquement la validité de la configuration :
+
+```bash
+docker compose config -q
+```
+
+### 4. Construire les images
+
+```bash
+docker compose build
+```
+
+Pour reconstruire sans réutiliser le cache de build :
+
+```bash
+docker compose build --no-cache
+```
+
+### 5. Démarrer les services
+
+```bash
+docker compose up -d
+```
+
+Lors d'un premier déploiement :
+
+```bash
 docker compose up --build -d
+```
+
+Afficher les conteneurs du projet :
+
+```bash
 docker compose ps
+```
+
+### 6. Vérifier les services
+
+Depuis la machine virtuelle :
+
+```bash
+curl -I http://localhost:8080
+```
+
+Ouvrir un shell dans la Toolbox :
+
+```bash
+docker compose exec toolbox bash
+```
+
+Depuis la Toolbox :
+
+```bash
+ip address
+ip route
+getent hosts web
+getent hosts iperf3-server
+```
+
+### 7. Exécuter la suite de tests
+
+```bash
+bash scripts/test-stack.sh
+```
+
+Le script vérifie la résolution DNS, la connectivité ICMP, le serveur HTTP, le port TCP 80 et le débit iperf3.
+
+### 8. Consulter les journaux
+
+```bash
+docker compose logs
+```
+
+Suivre les journaux :
+
+```bash
 docker compose logs -f
 ```
 
-Pour arrêter l'environnement :
+### 9. Arrêter les services
 
 ```bash
 docker compose down
 ```
 
-**Ces commandes ne sont pas encore exécutables dans le dépôt actuel**, car le fichier `compose.yaml` n'existe pas.
+Cette commande arrête et supprime les conteneurs et les réseaux du projet gérés par Compose. Les images Docker ne sont pas supprimées par défaut.
 
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:06B6D4,50:7C3AED,100:EC4899" width="100%" alt="Cyan violet magenta divider"/>
-</p>
+Ne pas utiliser `docker compose down -v` sans avoir vérifié les volumes concernés.
 
-## Diagnostic et dépannage
+---
 
-Un laboratoire réseau est aussi utile pour apprendre à diagnostiquer une panne.
+## Outils de diagnostic
 
-Les commandes suivantes serviront à inspecter les futurs conteneurs.
+### Toolbox
 
-| Commande | Utilité |
+<img src="https://api.iconify.design/mdi/console.svg?color=%232496ED" width="44" alt="Terminal icon" align="right"/>
+
+L'image Toolbox repose sur Ubuntu 24.04.
+
+Elle contient les outils suivants :
+
+| Outil | Fonction |
 |---|---|
-| `docker ps -a` | Lister les conteneurs |
-| `docker images` | Lister les images |
-| `docker network ls` | Lister les réseaux |
-| `docker network inspect NOM` | Examiner un réseau |
-| `docker inspect NOM` | Examiner un conteneur |
-| `docker logs NOM` | Consulter les journaux |
-| `docker exec -it NOM sh` | Ouvrir un shell dans un conteneur |
-| `docker port NOM` | Afficher les ports publiés |
+| `iproute2` | Interfaces et routage |
+| `iputils-ping` | Connectivité ICMP |
+| `curl` | Diagnostic HTTP |
+| `nmap` | Découverte et analyse des ports |
+| `iperf3` | Mesure des performances TCP/IP |
+| `getent` | Consultation de la résolution des noms |
 
-### Tests réseau à prévoir
+Exemples :
 
-Une fois les services implémentés, le projet devra permettre de vérifier :
+```bash
+docker compose exec toolbox ip address
+docker compose exec toolbox ip route
+docker compose exec toolbox ping -c 3 web
+docker compose exec toolbox curl -I http://web/
+docker compose exec toolbox nmap -sT -p 80 web
+docker compose exec toolbox iperf3 -c iperf3-server -t 5
+```
 
-1. La présence des conteneurs sur le réseau prévu.
-2. La résolution DNS des noms de services.
-3. La connectivité entre les conteneurs.
-4. La cohérence des adresses IP et des routes.
-5. L'accès aux ports publiés.
-6. La communication entre Windows, la VM et Docker.
-7. Le comportement lors d'un arrêt et d'un redémarrage.
+Les tests de scan doivent rester limités aux cibles autorisées.
 
-Les outils de test tels que `ping`, `curl`, `dig` ou `nc` devront être disponibles dans les environnements concernés avant de les utiliser.
-
-La réussite d'un test ne doit pas être supposée simplement parce que les conteneurs démarrent.
-
-## Sécurité et bonnes pratiques
-
-La conteneurisation ne signifie pas qu'un service est automatiquement sécurisé.
-
-Le projet devra respecter plusieurs principes.
-
-### Isolation
-
-- Séparer les services qui n'ont pas besoin de communiquer.
-- Utiliser des réseaux internes lorsque c'est pertinent.
-- Publier uniquement les ports nécessaires.
-- Éviter les modes réseau privilégiés sans justification.
-
-### Gestion des privilèges
-
-- Éviter l'exécution en root lorsque cela est possible.
-- Ne pas utiliser `privileged: true` par défaut.
-- Accorder uniquement les capacités Linux nécessaires.
-- Limiter l'accès au démon Docker.
-
-Certains outils de diagnostic réseau nécessitent des permissions particulières. Elles devront être documentées et justifiées individuellement.
-
-### Protection des informations
-
-- Ne jamais placer de mots de passe dans un Dockerfile.
-- Ne pas versionner les fichiers contenant des secrets.
-- Utiliser des variables ou mécanismes adaptés pour les paramètres sensibles.
-- Examiner les permissions des fichiers.
-- Utiliser des images de base fiables et des versions contrôlées.
-
-### Environnement de test
-
-Les tests doivent rester dans un laboratoire ou sur des réseaux pour lesquels tu disposes d'une autorisation.
-
-Le projet est pédagogique et ne doit pas être présenté comme une solution de surveillance ou de sécurité prête pour la production.
-
-Références : [Docker Engine Security](https://docs.docker.com/engine/security/) · [Docker Build Best Practices](https://docs.docker.com/build/building/best-practices/).
-
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=5&color=0:0F766E,45:06B6D4,100:2563EB" width="100%" alt="Teal cyan blue divider"/>
-</p>
+---
 
 ## Tests et validation
 
-Aucun système de tests automatisés n'est actuellement présent dans le dépôt.
+![Date](https://img.shields.io/badge/VALIDATION-18.11.2026-2563EB?style=flat)
+![Result](https://img.shields.io/badge/RESULT-5%2F5_SUCCESS-16A34A?style=flat)
+![Network](https://img.shields.io/badge/NETWORK-dnt--network-0891B2?style=flat)
 
-Les validations à réaliser au fur et à mesure de l'implémentation sont :
+Une campagne de tests a été réalisée le **18 novembre 2026** sur l'infrastructure Docker Compose.
 
-| Test | Objectif |
-|---|---|
-| Validation Dockerfile | Vérifier la construction de chaque image |
-| Validation Compose | Vérifier la syntaxe et la configuration YAML |
-| Démarrage | Vérifier le lancement des services |
-| Réseau | Vérifier la présence des conteneurs sur les réseaux attendus |
-| DNS | Vérifier la résolution des noms de services |
-| Ports | Vérifier les publications et les accès |
-| Sécurité | Vérifier les privilèges et les ports exposés |
-| Persistance | Vérifier les volumes et les données |
-| Redémarrage | Vérifier le comportement après arrêt des services |
-
-### Commandes de validation prévues
-
-Lorsque la stack sera créée :
+Commande exécutée :
 
 ```bash
-docker compose config
-docker compose build
-docker compose up -d
-docker compose ps
-docker compose logs
-docker compose down
+bash scripts/test-stack.sh
 ```
 
-Ces validations sont une procédure cible, pas des tests déjà exécutés.
+### Résultats
 
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:7C3AED,50:2563EB,100:06B6D4" width="100%" alt="Violet blue cyan divider"/>
-</p>
+| Test | Résultat |
+|---|---|
+| Résolution DNS `web` | Réussite |
+| Résolution DNS `iperf3-server` | Réussite |
+| Ping vers Nginx | Réussite |
+| Requête HTTP | Réussite |
+| Scan Nmap TCP 80 | Port ouvert |
+| iperf3 | Connexion et mesure réussies |
+
+### DNS
+
+Les noms de services ont été résolus :
+
+```text
+172.18.0.3      web
+172.18.0.2      iperf3-server
+```
+
+Cela confirme le fonctionnement de la résolution DNS sur le réseau Docker personnalisé.
+
+### ICMP
+
+Trois paquets ont été transmis au serveur web :
+
+```text
+3 packets transmitted
+3 received
+0% packet loss
+```
+
+Mesures observées :
+
+| Paramètre | Valeur |
+|---|---|
+| RTT minimum | 0.256 ms |
+| RTT moyen | 0.407 ms |
+| RTT maximum | 0.533 ms |
+| Perte de paquets | 0 % |
+
+### HTTP
+
+La commande :
+
+```bash
+curl -fsS http://web/
+```
+
+a renvoyé le document HTML du service Nginx.
+
+Le contenu de la page confirmait notamment :
+
+```html
+<h1>Docker Network Toolkit</h1>
+<p>Le serveur web fonctionne correctement.</p>
+<p>Service : web</p>
+<p>Infrastructure : Docker Compose</p>
+```
+
+### Nmap
+
+Commande :
+
+```bash
+nmap -sT -p 80 web
+```
+
+Résultat :
+
+```text
+PORT   STATE SERVICE
+80/tcp open  http
+```
+
+Le port TCP 80 du serveur web est accessible depuis la Toolbox.
+
+### iperf3
+
+Commande :
+
+```bash
+iperf3 -c iperf3-server -t 5
+```
+
+Résultat observé :
+
+| Paramètre | Valeur |
+|---|---|
+| Durée | 5 secondes |
+| Données transférées | Environ 5.92 GBytes |
+| Débit moyen | 10.2 Gbit/s |
+| Retransmissions TCP | 0 |
+
+Le serveur et le client iperf3 ont communiqué correctement.
+
+**Important :** ce débit mesure la communication entre conteneurs dans le laboratoire virtualisé. Il ne représente pas la vitesse de la connexion Internet ni celle de la carte réseau physique.
+
+### Bilan
+
+```text
+===== DNS =====
+SUCCESS
+
+===== PING =====
+SUCCESS
+
+===== HTTP =====
+SUCCESS
+
+===== NMAP =====
+SUCCESS
+
+===== IPERF3 =====
+SUCCESS
+
+Tous les tests ont réussi.
+```
+
+Le message final correspond au résultat réellement obtenu après l'exécution du script.
+
+Cette validation porte sur la connectivité et les fonctionnalités réseau testées. Elle ne remplace pas des tests de charge approfondis, des audits de sécurité ou des vérifications de production.
+
+---
+
+## Sécurité et bonnes pratiques
+
+<img src="https://api.iconify.design/mdi/shield-check.svg?color=%2310B981" width="46" alt="Security icon" align="right"/>
+
+La sécurité du laboratoire repose sur la limitation des privilèges et le contrôle des communications.
+
+### Isolation réseau
+
+Les trois services utilisent le réseau `dnt-network`.
+
+Le serveur iperf3 n'expose pas son port TCP 5201 sur l'hôte.
+
+Le serveur Nginx publie le port TCP 8080 pour permettre son accès depuis la VM ou depuis Windows selon les règles réseau.
+
+Actuellement, la configuration `"8080:80"` peut publier le service sur toutes les interfaces de la VM.
+
+Dans un environnement non isolé, il faut compléter cette configuration par des règles de pare-feu ou des restrictions d'interface adaptées.
+
+### Privilèges des conteneurs
+
+Le serveur iperf3 est configuré pour fonctionner sous l'utilisateur non privilégié `10001`.
+
+La Toolbox possède la capacité Linux `NET_RAW`, utilisée notamment pour certaines opérations réseau.
+
+La Toolbox fonctionne actuellement avec l'utilisateur par défaut de son image. Son passage à un utilisateur non privilégié fait partie des améliorations prévues.
+
+Aucun service n'utilise `privileged: true`.
+
+### Protection des informations
+
+Le fichier `.gitignore` exclut notamment :
+
+- Les fichiers `.env` contenant des paramètres locaux.
+- Les fichiers de capture réseau `.pcap` et `.pcapng`.
+- Les fichiers de logs.
+- Les dossiers de sauvegarde et fichiers temporaires prévus.
+
+Ces exclusions ne remplacent pas une vérification du contenu avant chaque commit.
+
+Ne jamais publier de clés privées, mots de passe, tokens ou secrets.
+
+### Images Docker
+
+Bonnes pratiques recommandées :
+
+- Utiliser des images officielles ou des sources fiables.
+- Fixer les versions lorsque cela est pertinent.
+- Mettre régulièrement à jour les dépendances.
+- Limiter les paquets installés.
+- Exécuter les services avec les privilèges minimaux.
+- Scanner les images pour détecter les vulnérabilités connues.
+
+L'analyse automatique des images est une amélioration prévue.
+
+---
+
+## Diagnostic et dépannage
+
+| Commande | Utilité |
+|---|---|
+| `docker ps -a` | Voir tous les conteneurs |
+| `docker image ls` | Lister les images |
+| `docker compose ps` | Voir les services Compose |
+| `docker compose logs` | Lire les journaux |
+| `docker network ls` | Lister les réseaux |
+| `docker network inspect dnt-network` | Inspecter le réseau |
+| `docker inspect dnt-toolbox` | Inspecter la Toolbox |
+| `docker compose config` | Examiner la configuration |
+| `docker compose build toolbox` | Reconstruire la Toolbox |
+| `docker compose exec toolbox bash` | Ouvrir un shell |
+| `ss -lntp` | Afficher les ports TCP en écoute sur Linux |
+
+### Tester la connectivité
+
+```bash
+docker compose exec toolbox ping -c 3 web
+```
+
+### Tester HTTP
+
+```bash
+docker compose exec toolbox curl -I http://web/
+```
+
+### Tester iperf3
+
+```bash
+docker compose exec toolbox iperf3 -c iperf3-server -t 5
+```
+
+### Vérifier les interfaces
+
+```bash
+docker compose exec toolbox ip address
+```
+
+### Vérifier les routes
+
+```bash
+docker compose exec toolbox ip route
+```
+
+### Vérifier le réseau Docker
+
+```bash
+docker network inspect dnt-network
+```
+
+---
 
 ## Feuille de route
 
-Le développement peut être organisé en étapes progressives.
+![Roadmap](https://img.shields.io/badge/ROADMAP-ACTIVE-2563EB?style=flat)
+![Progress](https://img.shields.io/badge/CORE_STACK-VALIDATED-16A34A?style=flat)
 
-<badge color="success">Base de documentation présente</badge>
-
-**Étape 1 : préparation de l'environnement**
+### Étape 1 — Préparation de l'environnement
 
 - [x] Création du dépôt GitHub.
-- [x] Création du dossier de documentation.
-- [x] Création du premier dossier de conteneur.
-- [ ] Finaliser l'installation de Linux.
-- [ ] Installer Docker Engine.
-- [ ] Installer et vérifier Docker Compose.
-- [ ] Documenter les versions exactes.
+- [x] Préparation de la machine virtuelle Linux.
+- [x] Utilisation de VMware.
+- [x] Installation de Docker Engine.
+- [x] Mise en place de Docker Compose.
+- [x] Configuration de Git.
+- [x] Configuration des signatures SSH.
+- [ ] Inventaire complet des versions logicielles.
 
-**Étape 2 : construction des images**
+### Étape 2 — Construction des images
 
-- [ ] Définir les outils à intégrer.
-- [ ] Compléter le Dockerfile Toolbox.
-- [ ] Choisir et fixer une image de base.
-- [ ] Installer les paquets nécessaires.
-- [ ] Construire et vérifier l'image.
-- [ ] Documenter les dépendances.
+- [x] Construction d'une image Docker personnalisée.
+- [x] Compréhension des images et des tags.
+- [x] Création de la Toolbox réseau.
+- [x] Installation de Nmap, ping, curl et iperf3.
+- [x] Création d'une image serveur iperf3.
+- [x] Vérification des exécutables de la Toolbox.
+- [ ] Renforcement de la reproductibilité des images.
+- [ ] Analyse des vulnérabilités des images.
 
-**Étape 3 : orchestration**
+### Étape 3 — Orchestration
 
-- [ ] Créer `compose.yaml`.
-- [ ] Déclarer les services.
-- [ ] Définir les réseaux.
-- [ ] Configurer les variables nécessaires.
-- [ ] Définir les volumes éventuels.
-- [ ] Vérifier le démarrage de l'ensemble.
+- [x] Création de `compose.yaml`.
+- [x] Déclaration des trois services.
+- [x] Création d'un réseau bridge personnalisé.
+- [x] Configuration de Nginx.
+- [x] Configuration du serveur iperf3.
+- [x] Démarrage des conteneurs.
+- [x] Vérification des services.
+- [ ] Ajout de healthchecks pertinents.
 
-**Étape 4 : réseau et diagnostic**
+### Étape 4 — Réseau et diagnostic
 
-- [ ] Vérifier les communications entre services.
-- [ ] Vérifier la résolution DNS.
-- [ ] Contrôler les ports exposés.
-- [ ] Documenter les sous-réseaux et passerelles.
-- [ ] Tester les communications depuis la VM.
-- [ ] Tester les accès depuis Windows.
+- [x] Vérification de la résolution DNS.
+- [x] Test de communication ICMP.
+- [x] Test HTTP.
+- [x] Scan du port TCP 80.
+- [x] Test de débit avec iperf3.
+- [x] Vérification de l'accès depuis Windows.
+- [x] Observation des adresses IP des conteneurs.
+- [ ] Tests approfondis d'isolation réseau.
+- [ ] Tests de reprise après panne.
 
-**Étape 5 : documentation et livraison**
+### Étape 5 — Documentation et livraison
 
-- [ ] Finaliser le schéma réseau.
-- [ ] Documenter les commandes.
-- [ ] Ajouter les résultats de tests réels.
-- [ ] Documenter les limitations.
-- [ ] Finaliser le rapport technique.
-- [ ] Préparer la présentation du projet.
+- [x] Création du README.
+- [x] Documentation de l'architecture initiale.
+- [x] Création d'un journal de travail.
+- [x] Publication des Dockerfiles.
+- [x] Publication de la stack Docker Compose.
+- [x] Documentation des premiers résultats réseau.
+- [ ] Finalisation du rapport technique.
+- [ ] Documentation complète des limitations.
+- [ ] Préparation de la présentation finale.
 
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:06B6D4,50:0F766E,100:84CC16" width="100%" alt="Cyan teal green divider"/>
-</p>
+### Étape 6 — Améliorations futures
+
+- [ ] Tests automatisés avec GitHub Actions.
+- [ ] Validation automatique de Docker Compose.
+- [ ] Tests ShellCheck pour les scripts Bash.
+- [ ] Analyse de sécurité des images.
+- [ ] Restriction des privilèges de la Toolbox.
+- [ ] Amélioration des contrôles d'accès réseau.
+- [ ] Tests de disponibilité et healthchecks.
+- [ ] Documentation de dépannage avancée.
+
+---
 
 ## Organisation du dépôt
-
-L'arborescence ci-dessous correspond aux fichiers réellement présents sur `main`.
 
 ```text
 Docker-Network-Toolkit/
 │
+├── .gitignore
 ├── LICENSE
 ├── README.md
+├── compose.yaml
 │
 ├── containers/
-│   └── toolbox/
+│   ├── toolbox/
+│   │   └── Dockerfile
+│   │
+│   └── iperf3/
 │       └── Dockerfile
 │
 ├── docs/
+│   ├── architecture/
+│   │   └── network.md
+│   │
+│   ├── exercices/
+│   │   ├── README.md
+│   │   ├── 01-linux-terminal-et-fichiers.md
+│   │   ├── 02-construire-une-image-docker.md
+│   │   ├── 03-images-et-tags.md
+│   │   ├── 04-conteneurs-cycle-de-vie.md
+│   │   ├── 05-reseaux-docker.md
+│   │   ├── aide-memoire-commandes.txt
+│   │   └── fiche-compte-rendu.md
+│   │
 │   └── rapport-technique/
 │       └── JDT.txt
 │
-└── scripts/
-    └── script.txt
+├── scripts/
+│   ├── script.txt
+│   └── test-stack.sh
+│
+└── web/
+    └── index.html
 ```
 
-### Détail des fichiers
+### Description des composants
 
-| Chemin | Description |
+| Fichier | Fonction |
 |---|---|
-| `README.md` | Présentation et documentation du projet |
-| `LICENSE` | Licence MIT |
-| `containers/toolbox/Dockerfile` | Emplacement prévu pour l'image Toolbox, actuellement vide |
-| `docs/rapport-technique/JDT.txt` | Journal de travail et suivi des activités |
-| `scripts/script.txt` | Fichier présent, actuellement vide |
+| `compose.yaml` | Orchestration des conteneurs |
+| `containers/toolbox/Dockerfile` | Image de diagnostic réseau |
+| `containers/iperf3/Dockerfile` | Image du serveur iperf3 |
+| `scripts/test-stack.sh` | Tests fonctionnels réseau |
+| `web/index.html` | Page servie par Nginx |
+| `docs/architecture/network.md` | Documentation de l'accès réseau |
+| `docs/exercices/` | Exercices pédagogiques Docker |
+| `docs/rapport-technique/JDT.txt` | Journal de travail |
 
-### Journal de travail
+Les fichiers `scripts/script.txt` et les éventuels autres fichiers de préparation peuvent être conservés pour l'historique, même si les scripts opérationnels sont désormais séparés.
 
-Le fichier `docs/rapport-technique/JDT.txt` permet de suivre le temps consacré au projet.
+---
 
-Il contient notamment des entrées datées du 4 novembre 2026, avec cinq périodes de 45 minutes consacrées à l'introduction, à l'installation et à la préparation de l'environnement.
+## Parcours pédagogique
 
-Les dates suivantes contiennent encore des emplacements de suivi vides. Elles ne constituent donc pas des étapes déjà réalisées.
+Le dépôt contient plusieurs exercices progressifs.
 
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:2563EB,50:7C3AED,100:EC4899" width="100%" alt="Blue violet magenta divider"/>
-</p>
+| Exercice | Sujet |
+|---|---|
+| [01 — Terminal Linux](docs/exercices/01-linux-terminal-et-fichiers.md) | Navigation et gestion des fichiers |
+| [02 — Construire une image](docs/exercices/02-construire-une-image-docker.md) | Dockerfile et commandes de build |
+| [03 — Images et tags](docs/exercices/03-images-et-tags.md) | Gestion des références d'images |
+| [04 — Cycle de vie](docs/exercices/04-conteneurs-cycle-de-vie.md) | Gestion des conteneurs |
+| [05 — Réseaux Docker](docs/exercices/05-reseaux-docker.md) | Réseaux bridge et communication |
+
+Un [aide-mémoire des commandes](docs/exercices/aide-memoire-commandes.txt) est également disponible.
+
+Chaque exercice permet de progresser par la pratique et de documenter les observations réelles.
+
+---
+
+## Journal de travail
+
+Le journal du projet est disponible dans :
+
+[docs/rapport-technique/JDT.txt](docs/rapport-technique/JDT.txt)
+
+Il permet de suivre les travaux d'installation, de développement, de diagnostic et de documentation.
+
+Les séances sont organisées par date.
+
+Les durées et les activités doivent être renseignées sur la base du travail réellement effectué.
+
+---
 
 ## Documentation et références techniques
-
-Les ressources officielles suivantes servent de base pour le développement du projet.
 
 <div align="center">
 
 [![Docker Docs](https://img.shields.io/badge/Docker-Documentation-2496ED?style=flat&logo=docker&logoColor=white)](https://docs.docker.com/)
 [![Compose](https://img.shields.io/badge/Docker_Compose-Documentation-1D63ED?style=flat&logo=docker&logoColor=white)](https://docs.docker.com/compose/)
-[![VirtualBox](https://img.shields.io/badge/Oracle-VirtualBox-183A61?style=flat&logo=virtualbox&logoColor=white)](https://www.virtualbox.org/)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-Documentation-E95420?style=flat&logo=ubuntu&logoColor=white)](https://ubuntu.com/)
 [![Debian](https://img.shields.io/badge/Debian-Documentation-A81D33?style=flat&logo=debian&logoColor=white)](https://www.debian.org/doc/)
-[![Linux](https://img.shields.io/badge/Linux-Kernel-444444?style=flat&logo=linux&logoColor=white)](https://www.kernel.org/)
 [![Bash](https://img.shields.io/badge/GNU-Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
 
 </div>
@@ -803,12 +997,16 @@ Les ressources officielles suivantes servent de base pour le développement du p
 | [Docker Networking](https://docs.docker.com/engine/network/) | Réseaux et connectivité |
 | [Compose Networking](https://docs.docker.com/compose/how-tos/networking/) | Communication entre services |
 | [Dockerfile Reference](https://docs.docker.com/reference/dockerfile/) | Construction des images |
-| [Docker Build Best Practices](https://docs.docker.com/build/building/best-practices/) | Images et bonnes pratiques |
-| [Docker Engine Security](https://docs.docker.com/engine/security/) | Sécurité de l'environnement |
+| [Docker Build Best Practices](https://docs.docker.com/build/building/best-practices/) | Construction et optimisation |
+| [Docker Engine Security](https://docs.docker.com/engine/security/) | Sécurité |
 | [Docker Volumes](https://docs.docker.com/engine/storage/volumes/) | Persistance des données |
-| [VirtualBox Networking](https://docs.oracle.com/en/virtualization/virtualbox/7.2/user/networkingdetails.html) | Modes réseau des machines virtuelles |
-| [Debian Reference](https://www.debian.org/doc/manuals/debian-reference/ch05) | Configuration réseau Linux |
-| [GNU Bash](https://www.gnu.org/software/bash/manual/) | Automatisation et scripts |
+| [VMware](https://www.vmware.com/) | Virtualisation |
+| [Ubuntu](https://ubuntu.com/server/docs) | Administration Ubuntu |
+| [Debian Reference](https://www.debian.org/doc/manuals/debian-reference/) | Administration Debian |
+| [GNU Bash](https://www.gnu.org/software/bash/manual/) | Automatisation |
+| [Git](https://git-scm.com/doc) | Gestion des versions |
+
+---
 
 ## Contribution
 
@@ -831,7 +1029,11 @@ git commit -m "feat: add network diagnostic tool"
 git push origin feature/network-tool
 ```
 
-Ne pas inclure de secrets, de mots de passe ou de fichiers de configuration personnels dans les contributions.
+Les contributions doivent respecter le périmètre pédagogique du projet.
+
+Ne pas inclure de secrets, de mots de passe, de clés privées ou de données personnelles.
+
+---
 
 ## Licence
 
@@ -845,18 +1047,21 @@ Copyright (c) 2026 Rufus.
 
 ## Remerciements et crédits
 
-Ce projet s'appuie sur le travail des équipes qui développent et maintiennent les technologies de virtualisation, de conteneurisation, de réseau et les outils open source utilisés pour apprendre l'infrastructure.
+Ce projet s'appuie sur le travail des équipes et des communautés qui développent et maintiennent les technologies de virtualisation, de conteneurisation, de réseau et les outils open source.
 
 ### Technologies et projets
 
-- [**Docker**](https://www.docker.com/) pour la technologie de conteneurisation.
+- [**Docker**](https://www.docker.com/) pour la conteneurisation.
 - [**Docker Compose**](https://github.com/docker/compose) pour l'orchestration des services.
-- [**Linux Kernel**](https://www.kernel.org/) pour les fondations du système Linux.
-- [**Debian Project**](https://www.debian.org/) pour la distribution Linux et sa documentation.
-- [**Oracle VirtualBox**](https://www.virtualbox.org/) pour la virtualisation.
-- [**GNU Project**](https://www.gnu.org/) pour Bash et les outils associés.
-- [**Git**](https://git-scm.com/) pour le contrôle de version.
-- [**GitHub**](https://github.com/) pour l'hébergement du dépôt et la collaboration.
+- [**Linux Kernel**](https://www.kernel.org/) pour les fondations du système.
+- [**Ubuntu**](https://ubuntu.com/) pour le système invité et la Toolbox.
+- [**Debian Project**](https://www.debian.org/) pour le serveur iperf3.
+- [**VMware**](https://www.vmware.com/) pour la virtualisation.
+- [**Nmap**](https://nmap.org/) pour le diagnostic des ports.
+- [**iperf3**](https://github.com/esnet/iperf) pour les mesures réseau.
+- [**GNU Project**](https://www.gnu.org/) pour Bash et les utilitaires.
+- [**Git**](https://git-scm.com/) pour le versionnement.
+- [**GitHub**](https://github.com/) pour l'hébergement et la collaboration.
 
 ### Images et ressources graphiques
 
@@ -870,7 +1075,9 @@ Ce projet s'appuie sur le travail des équipes qui développent et maintiennent 
 
 Les photographies sont utilisées comme illustrations d'ambiance et ne représentent pas l'infrastructure réelle du projet.
 
-Docker est une marque de Docker, Inc. Son utilisation dans cette documentation est uniquement informative. Ce projet n'est ni sponsorisé ni approuvé par Docker, Inc.
+Docker est une marque de Docker, Inc. Son utilisation dans cette documentation est uniquement informative.
+
+Ce projet n'est ni sponsorisé ni approuvé par Docker, Inc.
 
 Merci aux mainteneurs, contributeurs et auteurs de ces ressources qui rendent l'apprentissage de l'informatique et de l'infrastructure accessible.
 
