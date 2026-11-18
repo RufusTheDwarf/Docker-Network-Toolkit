@@ -1,59 +1,55 @@
 //04.11.2026
 
-- 45min introduction au P_Bulle
+- 45min introduction au P_Bulle et présentation du projet
 
-- 45min installation de Ubuntu + lecture de la théorie 
+- 45min installation de Ubuntu + lecture de la théorie
 
-- 45min Mise en place des fichiers pour le projet + création depot gihub
+- 45min mise en place des fichiers pour le projet + création du dépôt GitHub
 
-- 45min réinstallation de Ubuntu + Lecture de la théorie
+- 45min problèmes avec VirtualBox, passage sur VMware et réinstallation de Ubuntu
 
-- 45min installation des fichiers, paquets, dépendances
+- 45min installation des paquets et préparation de Docker
+
 
 //11.11.2026
 
-- 45min
+- 45min découverte des Dockerfiles et des commandes FROM, RUN et CMD
 
-- 45min
+- 45min création d'une image Docker avec Ubuntu et installation de Nmap et des outils réseau
 
-- 45min
+- 45min création de conteneurs et essais avec docker ps, docker exec et docker inspect
 
-- 45min
+- 45min tests réseau avec ping et curl + vérification des interfaces et des ports
 
-- 45min
+- 45min exercices sur les images Docker, les tags et les images sans nom
+
 
 //18.11.2026
 
-- 45min
+- 45min création de plusieurs versions de Toolbox et comparaison des images Docker
 
-- 45min
+- 45min récupération du dépôt GitHub et ajout des fichiers créés sur la VM
 
-- 45min
+- 45min configuration de la clé SSH pour signer les commits et connexion à GitHub
 
-- 45min
+- 45min correction du Dockerfile, installation de curl et iperf3 et reconstruction de Toolbox
 
-- 45min
+- 45min tests avec Docker Compose, ping, DNS, HTTP, Nmap et iperf3 + publication des modifications sur GitHub
+
 
 //25.11.2026
 
-- 45min
+- 45min vérification des conteneurs Docker et de leur configuration réseau
 
-- 45min
+- 45min amélioration de la sécurité des conteneurs et vérification des ports et permissions
 
-- 45min
+- 45min ajout de GitHub Actions pour vérifier automatiquement les fichiers du projet
 
-- 45min
+- 45min derniers tests avec Docker Compose et correction des problèmes rencontrés
 
-- 45min
+- 45min mise à jour du README, du rapport technique et du journal de travail + derniers commits sur GitHub
+
 
 //02.12.2026
 
-- 45min
-
-- 45min
-
-- 45min
-
-- 45min
-
-- 45min
+Projet terminé le 25.11.2026, aucune séance supplémentaire prévue.
